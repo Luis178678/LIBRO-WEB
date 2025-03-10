@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio de Descarga de Libros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- #Página 1: Introducción -->
+  <div id="pagina1" class="pagina">
+    <h1>Introducción</h1>
+    <div class="contenedor-intro">
+      <p>Este sitio web está diseñado para que los usuarios puedan descargar libros de manera fácil y rápida. Explora nuestra colección y encuentra lo que necesitas.</p>
+    </div>
+    <div class="contenedor-boton">
+      <button id="continuar1">Continuar</button>
+    </div>
+  </div>
+
+  <!-- #Página 2: Registro -->
+  <div id="pagina2" class="pagina" style="display: none;">
+    <h1>Registro</h1>
+    <div class="contenedor-registro">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+      <label for="telefono">Número de teléfono</label>
+      <input type="tel" id="telefono" placeholder="Ingresa tu número">
+    </div>
+    <div class="contenedor-boton">
+      <button id="registrarse">Registrarse</button>
+      <p id="mensaje-error" style="color: red; display: none;">Regístrate por favor</p>
+    </div>
+  </div>
+
+  <!-- #Página 3: Buscador y Libros -->
+  <div id="pagina3" class="pagina" style="display: none;">
+    <div class="container">
+      <div class="sidebar">
+        <div class="encabezado-categorias">Libros:</div>
+        <div class="categoria" data-categoria="Cuentos">Cuentos</div>
+        <div class="categoria" data-categoria="Mitos">Mitos</div>
+        <div class="categoria" data-categoria="Leyendas">Leyendas</div>
+        <div class="categoria" data-categoria="Historia">Historia</div>
+      </div>
+      <div class="contenido-principal">
+        <h1 class="titulo-centrado">Buscar Libros</h1>
+        <div class="buscador-centrado">
+          <input type="text" id="buscar" placeholder="Buscar libro...">
+        </div>
+        <div class="contenedor-grande">
+          <div id="contenedor-libros" class="contenedor-libros"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- #Página 4: Pago con Yape -->
+  <div id="pagina4" class="pagina" style="display: none;">
+    <h1>Pago con Yape</h1>
+    <div class="contenedor-pago">
+      <img id="qr-image" src="https://via.placeholder.com/150" alt="QR de pago">
+      <p id="texto-pago">Paga con Yape</p>
+    </div>
+    <div class="contenedor-boton">
+      <button id="volver">Volver</button>
+      <button id="hecho-pago">Hecho el pago</button>
+    </div>
+  </div>
+
+  <!-- #Página 5: Espera y desbloqueo -->
+<div id="pagina5" class="pagina" style="display: none;">
+  <h1>Espera un momento...</h1>
+  <div class="contenedor-espera">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  <div class="contenedor-boton" id="contenedor-ingresar" style="display: none;">
+    <button id="ingresar">Ingresar</button>
+  </div>
+</div>
+
+  <!-- #Página 6: Información del libro -->
+  <div id="pagina6" class="pagina" style="display: none;">
+    <h1>Información del libro</h1>
+    <div class="contenedor-introduccion">
+      <p id="info-libro">Aquí va la introducción del libro.</p>
+    </div>
+    <div class="contenedor-boton">
+      <button id="volver-info">Volver</button>
+    </div>
+  </div>
+
+  <!-- #Página 7: Categoría de libros -->
+  <div id="pagina7" class="pagina" style="display: none;">
+    <h1 id="titulo-categoria"></h1>
+    <div class="contenedor-grande">
+      <div id="contenedor-libros-categoria" class="contenedor-libros"></div>
+    </div>
+    <div class="contenedor-boton">
+      <button id="volver-categoria">Volver</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
